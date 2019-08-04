@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/test5?useUnicode=true&amp&characterEncoding=UTF-8&serverTimezone=UTC     #//数据库地址： localhost:数据库的端口号/数据库名称
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:cn/mybatistest/mapper/*Mapper.xml #指定后缀为Mapper.xml的文件在哪里
+  type-aliases-package: com.entity #指定entity文件在哪里
+  configuration:
+    map-underscore-to-camel-case : true  #开启A_B_C格式的数据转换成小驼峰格式
