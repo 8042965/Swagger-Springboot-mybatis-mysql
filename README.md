@@ -1,15 +1,10 @@
 # Swagger-Springboot-mybatis-mysql
 Swagger+Springboot+mybatis+mysql。使用Swagger写的学生信息管理系统的API管理工具
 
-# SpringBoot+swagger
 
-
-
-[TOC]
-
-
-
-
+@[toc]
+# 此项目说明
+此项目是我闲着的时候，整理出来的。因为我主要是做后端的，接口可能测试比较麻烦，所以就想起来了使用Swagger来管理API，然后还起到了测试的作用，还省得费劲去整理API文档了。一举两得，灰常的完美鸭！
 
 # 环境
 
@@ -19,19 +14,22 @@ SpringBoot
 
 
 
-
-
 注：下文全是在SpringBoot2.x和已有Maven环境的基础上进行做的。
 
 如果没有请移步：
 
-
-
+[SpringBoot一1（初次使用）+HelloWord](https://blog.csdn.net/qq_17623363/article/details/88859014 "SpringBoot一1（初次使用）+HelloWord")
 
 
 ------
 
 # 源代码
+
+[本项目源代码](https://github.com/8042965/Swagger-Springboot-mybatis-mysql "源代码")
+
+[SpringBoot一1（初次使用）+HelloWord](https://blog.csdn.net/qq_17623363/article/details/88859014 "SpringBoot一1（初次使用）+HelloWord")
+
+[Maven环境配置-必会](https://blog.csdn.net/qq_17623363/article/details/88858907 "Maven环境配置-必会")
 
 
 
@@ -80,22 +78,18 @@ SpringBoot
 
 
 原始的界面：
-
-![1564883393587](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1564883393587.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190804102602257.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE3NjIzMzYz,size_16,color_FFFFFF,t_70)
 
 引入bootstrap-ui后的：
 
-![1564883378416](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1564883378416.png)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190804102622639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE3NjIzMzYz,size_16,color_FFFFFF,t_70)
 
 
 
 
 此工程的目录结构：
 
-![1564883615801](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1564883615801.png)
-
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019080410264516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE3NjIzMzYz,size_16,color_FFFFFF,t_70)
 
 
 
@@ -117,8 +111,7 @@ SpringBoot
 
 这些信息会在主页进行显示，如图所示：
 
-![1564883795996](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1564883795996.png)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190804102703190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE3NjIzMzYz,size_16,color_FFFFFF,t_70)
 
 
 SwaggerConfig.java
@@ -323,20 +316,18 @@ INSERT INTO `student` VALUES ('201611101001', '艺术学院', '李小明', '技�
 
 # 五、测试结果
 
-测试原始Ui界面：
+## 测试1、原始Ui界面：
 
 输入：
 
 http://localhost:8080/swagger-ui.html#
 
-![1564884607284](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1564884607284.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190804102725513.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE3NjIzMzYz,size_16,color_FFFFFF,t_70)
 
 
 
+## 测试2、BS的UI：
 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190804102739298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE3NjIzMzYz,size_16,color_FFFFFF,t_70)
 
-测试BS的UI：
-
-![1564884628143](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1564884628143.png)
-
-![1564884642092](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1564884642092.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190804102750348.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE3NjIzMzYz,size_16,color_FFFFFF,t_70)
